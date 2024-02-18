@@ -14,7 +14,7 @@ class Window1:
         self.Menu = tk.Menu(self.menu)
         self.menu.add_cascade(label="Menu", menu=self.Menu)
         self.Menu.add_command(label="Create new command Hello",command= self.lo)
-        self.img =PhotoImage(file="w.png")
+        self.img = PhotoImage(file="w.png")
         self.labelimg=Label(root,image=self.img)
         self.labelimg.pack()
         self.scaleGamma = tk.Scale(root , from_=1 ,to=100,length=700,orient=HORIZONTAL,command=self.l)
